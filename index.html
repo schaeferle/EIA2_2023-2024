@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/dev/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+    <a-scene embedded arjs='sourceType: webcam;' vr-mode-ui="enabled: false">
+        <a-marker type='pattern' url='pattern-marker.patt'>
+            
+            <!-- Erstes Bild -->
+            <a-image src="starsky.png" position="0 -3 -5" scale="15 15 15" material="opacity: 0.5"></a-image>
+                    
+            <!-- Zweites Bild -->
+            <a-image src="earth-1303628.png" position="0 0 0" scale="2 2 2"></a-image>
+            
+            <!-- Drittes Bild -->
+            <a-image src="moon-1303512.png" position="0.7 0.7 0.8" scale="0.8 0.8 0.8"></a-image>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
